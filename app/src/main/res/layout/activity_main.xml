@@ -1,0 +1,113 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp"
+    android:orientation="vertical">
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="109dp"
+        android:id="@+id/webViewMain"
+        android:padding="0dp"
+        android:layout_weight="0.98"
+        android:weightSum="1"
+        android:layout_margin="0dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_reload"
+            android:id="@+id/btnHome"
+            android:drawableTop="@drawable/icon_1"
+            android:drawablePadding="0dp"
+            android:textSize="10sp"
+            android:background="#00ff0000"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:layout_gravity="center_vertical" />
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_left"
+            android:id="@+id/btnLeft"
+            android:drawableTop="@drawable/icon_2"
+            android:drawablePadding="0dp"
+            android:textSize="10sp"
+            android:background="#00ff0000"
+            android:layout_marginTop="2dp"
+            android:onClick="onBtnLeftClicked"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:enabled="false" />
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_right"
+            android:id="@+id/btnRight"
+            android:drawableTop="@drawable/icon_3"
+            android:drawablePadding="0dp"
+            android:textSize="10sp"
+            android:background="#00ff0000"
+            android:layout_marginTop="2dp"
+            android:onClick="onBtnRightClicked"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:enabled="false"/>
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_list"
+            android:id="@+id/btnList"
+            android:onClick="onBtnListClicked"
+            android:drawableTop="@drawable/icon_4"
+            android:drawablePadding="0dp"
+            android:textSize="10sp"
+            android:background="#00ff0000"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:layout_gravity="center_vertical" />
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_newuser"
+            android:id="@+id/btnNewUser"
+            android:drawableTop="@drawable/icon_5"
+            android:drawablePadding="0dp"
+            android:textSize="10sp"
+            android:background="#00ff0000"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:layout_gravity="center_vertical" />
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_download"
+            android:id="@+id/btnDownload"
+            android:onClick="onBtnDownloadClicked"
+            android:drawableTop="@drawable/icon_6"
+            android:drawablePadding="0dp"
+            android:textSize="10sp"
+            android:background="#00ff0000"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:enabled="false" />
+
+    </LinearLayout>
+
+</LinearLayout>
