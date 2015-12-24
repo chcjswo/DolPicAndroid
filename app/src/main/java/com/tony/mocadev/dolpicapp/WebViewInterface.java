@@ -128,7 +128,7 @@ public class WebViewInterface {
         String sFileName = a_sImgSrc.substring(a_sImgSrc.lastIndexOf("/") + 1);
 
         // 저장 폴더 생성
-        File folder = new File(Environment.getExternalStorageDirectory().toString() + "/DolPic");
+        File folder = new File(Environment.getExternalStorageDirectory().toString() + "/DCIM/DolPic");
         if (!folder.exists())
             folder.mkdirs();
 
