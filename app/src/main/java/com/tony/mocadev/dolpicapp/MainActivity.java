@@ -326,10 +326,6 @@ public class MainActivity extends Activity {
         @Override
         protected Void doInBackground(Void... arg0) {
             try {
-//                for (int i = 0; i < 5; i++) {
-//                    //asyncDialog.setProgress(i * 30);
-//                    Thread.sleep(500);
-//                }
                 Thread.sleep(2000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
@@ -343,25 +339,4 @@ public class MainActivity extends Activity {
             super.onPostExecute(result);
         }
     }
-
-//    public void timeThread(String msg) {
-//
-//        mProgressDialog = new ProgressDialog(this);
-//        mProgressDialog = new ProgressDialog(this);
-//        mProgressDialog.setMessage(msg);
-//        mProgressDialog.setIndeterminate(true);
-//        mProgressDialog.setCancelable(true);
-//        mProgressDialog.show();
-//        new Thread(new Runnable() {
-//            public void run() {
-//                // TODO Auto-generated method stub
-//                try {
-//                    Thread.sleep(3000);
-//                } catch (Throwable ex) {
-//                    ex.printStackTrace();
-//                }
-//                mProgressDialog.dismiss();
-//            }
-//        }).start();
-//    }
 }
